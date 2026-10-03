@@ -1,0 +1,21 @@
+[package]
+name = "ic-audio-view"
+version = "0.1.0"
+edition = "2021"
+description = "Plays a track, with the rest of the folder as a playlist"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ic-plugin-api = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+ic-plugin-api = { workspace = true, features = ["testing"] }
+
+[features]
+default = ["export-abi"]
+export-abi = []

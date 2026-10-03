@@ -1,0 +1,3 @@
+# build.sh collects the libraries from bin/target/release.
+[build]
+target-dir = "bin/target"
